@@ -190,7 +190,7 @@ def build(args, remaining):
     if not os.path.exists(installdir): os.makedirs(installdir)
 
     # build up args string for the cmake command
-    cmake_cmd = ["cmake", rootdir, "-D", "CMAKE_INSTALL_PREFIX=" + installdir]
+    cmake_cmd = ["/home/shy/.local/bin/cmake", rootdir, "-D", "CMAKE_INSTALL_PREFIX=" + installdir]
 
     # returns "ON" if truthy, else "OFF"
     def on_off(b):
